@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- el Meta Tag sirve especificamente para el SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=engine"> <!-- Este MetaTag describe que nuestra pagina es compatible con Internet Explorer (para otros buscar en google) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Este tag describe a la pagina que la mism-->
+
+    <!-- Nada de la info que se pone en un Meta aparece visible para los usuarios, es unicamente legible por la search engine en cuestion,
+    conviene utilizarlo para declarar informacion de la pagina o de las paginas que nos interesa resaltar para su busqueda, como el Log In, el Register, la Landing Page, un catalogo,
+     es decir todo en lo que nuestra pagina sea efectiva -->
+
+    <title>Pagina qla</title> <!-- Meta tag para el titulo -->
+    <meta name="description" content="Esta es la descripcion de la pagina que va a ser leida por las search engines"> <!-- Just read it-->
+    <meta name="autorship" content="Yo XD"> <!-- Provee info de quien es el autor de la pagina (si buscas marcos suckerlu en Google te sale FB example)-->
+    <meta name="keywords" content="coca, keta, mdma, lsd, cho'gath, ligoleyen, paco, paquin, paquete"> <!-- Keywords para las search engine de toda la vida -->
+
+   <!-- usar MT unicas para cada page de la web, usar keywords relevantes en los meta tags, mantener dichos keywords conscisos no utilizar demasiados MT, malo pal SEO, 
+    usar viewport tags para asegurar que la pagina es reactive en diferentes dispositivos-->
+    <link rel="icon" href="Sources/icon.png">
+
+      <!-- El style es el CSS, las clases para crear grupos y modificarlos se crean con class="nombre", 
+        lo mismo con los ID para elementos unicos, esto tambien aplica para la estructura de HTML como body o header etc.-->
+<style> 
+
+#Headerspacing{
+    height: 250px;
+}
+
+body {
+background-color: rgb(44, 44, 44);
+color: white;
+
+}
+.pepeParagraph{                 
+color: rgb(154, 92, 158);
+}
+.pepeClase{
+color: crimson;
+}
+.pepeComentario{
+    color:rgb(236, 160, 160);
+}
+#ListitaOrdenadaBgColor{
+background-color: tomato;
+color: black;
+}
+#ListitaDesordenadaBgColor{
+    background-color: crimson;
+    color: black;
+}
+#botonHover:hover{
+    background-color: black;
+    color: white;
+}
+#botonHover:active{
+    background-color: rgb(52, 1, 82);
+    color: white;
+}
+#videito:visited{
+color: rgb(89, 0, 131);
+}
+#testFieldParaFocus:focus{
+    background-color: red;
+    color:skyblue;
+}
+p:nth-child(0){
+background-color: rgb(51, 2, 2);
+color: white;
+}
+p:nth-child(0){
+background-color: rgb(51, 2, 2);
+color: white;
+}
+p:first-child{
+    color: greenyellow;
+}
+p:last-child{
+color: orange;
+}
+#feisbuXD::before{
+content: "";
+display: inline-block;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+border: none;
+background-color: rgb(53, 224, 53);
+}
+a[href^="https"]{
+    background-color: hotpink;
+    margin: 3px;
+}
+input[type="email"] {
+background-color: lightgreen;
+color: black;
+}
+#p1{
+    font: caption;
+    font-variant: small-caps; 
+    text-transform: capitalize;  
+font-size: small;
+}
+#p2{
+    font-variant: small-caps;
+    text-decoration: underline;
+font-size: medium;
+font-weight: 900;
+}
+#p3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-decoration: overline;
+    font-size: large;
+}
+#p4{
+ font-style: italic;
+ text-transform: capitalize;
+font-size: larger;
+
+}
+#p5{
+ font:caption;
+font-size: 300%;
+
+}
+
+#bokeron{
+   float: right;
+}
+
+
+#bannerPeruano{
+        position: fixed;
+        width: 100%;
+        height: 12%;
+        top: 0;
+        left: 0;   
+        z-index: 0;
+    }
+</style>
+<!-- el : en cualquier clase sirve para agregar pseudoclases, :hover modifica el item en cuestion cuando el mouse esta arriba suyo-->
+<!-- en cuanto a nth-child, sirve para agregar estilos a las clases y sus respectivas partes, se pueden utilizar valores como (odd)(even)(2n)(3n)... (2n + "xnumero")-->
+<!-- first-child hace lo mismo que nth-child pero para el primer hijo de cada clase marcada (en ese caso para <p>), last-child es lo mismo pero inverso-->
+    <!-- para los pseudo elements se utiliza :: en vez single (:)-->
+    <!--input[type] modifica el estilo de todos los input que contengan lo escrito dentro de ="", en este caso email-->
+
+</head>
+    <div>
+<header>
+        <div class="paginasPeruanas">Pagina 1</div>
+        <div class="paginasPeruanas">Pagina 2</div>
+        <div class="paginasPeruanas">Pagina 3</div>
+        <div class="paginasPeruanas">Pagina 4</div>
+        <div class="paginasPeruanas">Pagina 5</div>
+        <div class="paginasPeruanas">Pagina 6</div>
+</header>
+<nav>
+    
+    
+</nav>  
+<body>
+    <div>
+    <div id="Headerspacing">
+        
+    </div>
+    <div>
+
+    <h1 class="pepeClase">Tus putisimos muertos pisaos H1</h1>
+   <!--...h3,h4,h5... -->
+    <h6 class="pepeClase">Tus putisimos muertos pisaos H6</h6>
+</div>
+<div>
+    <p class="pepeParagraph">Paragraph qlao</p>
+    <b class="pepeParagraph">Paragraph qlao pero con Bold Tag </b>
+    <br></br>
+    <i class="pepeParagraph">Paragraph qlao pero con Italic</i>
+    <br></br>
+    <u class="pepeParagraph">Paragraph qlao pero con Underline</u>
+    <br></br>
+    <s class="pepeParagraph">Paragraph qlao pero con Strike Tag</s>
+    <br></br>
+    <ins class="pepeParagraph">Paragraph qlao pero con Inserted Tag</ins>
+    <br></br>
+    <sup class="pepeParagraph">Paragraph qlao pero con SuperScript Tag</sup>
+    <p class="pepeParagraph">Tu puta madre<sup>SuperScript Tag KEKW</sup></p>
+    
+    3<sup>3<sup>3<sup>3<sup>3<sup>3</sup></sup></sup></sup></sup> = <textarea><sup>3<sup>3<sup>3<sup>3<sup>3</sup></sup></sup></sup></sup></textarea> Ejemplo: 2x<sup>3</sup>-4x+3
+    <br></br>
+    <sub class="pepeParagraph">Paragraph qlao pero con SupScript Tag</sub>
+    <p class="pepeParagraph">Tu puta madre<sub>SubScript Tag KEKW</sub></p>
+    3<sub>3<sub>3<sub>3<sub>3<sub>3</sub></sub></sub></sub></sub> = <textarea><sub>3<sub>3<sub>3<sub>3<sub>3</sub></sub></sub></sub></sub></textarea> Ejemplo: H<sub>2</sub>O 
+    <br></br>
+    <small class="pepeParagraph">Paragraph qlao pero con SmallScript Tag</small>
+    <p class="pepeParagraph">Tu puta madre<small> SmallScript Tag KEKW </small></p>
+    <mark class="pepeParagraph">Paragraph qlao pero con Mark Tag</mark>
+    <p class="pepeParagraph">Tu puta madre<mark> Mark Tag KEKW </mark></p>
+    <br></br>
+    <br></br>
+    <em class="pepeParagraph"> Tu puta madre pero con Emphasized tag</em> <!--(parece Italic pero pal navegador es diferente)-->
+<br></br>
+    <strong class="pepeParagraph"> Tu puta madre pero con Strong tag </strong> <!--(parece Bold pero pal navegador es diferente)-->
+</div>
+
+<div>
+
+    <form action="" method=""> 
+        <b class="pepeComentario">Los Form,H1 etc, agregan un valor semantico al codigo, es decir, siempre que se vaya a mostrar informacion importante la cual pueda ser positiva a la hora de querer aparecer en una search engine, conviene ponerla ahi dentro</b>
+        <br></br>
+       <p class="pepeComentario"> Un ejemplo de una frase con gran valor semantico para el buscador podria ser esta <strong>Masturba tu mente </strong><em> Eyacula ideas </em> </p> <!--(Utilizando strong y em se le agrega un valor semantico mayor)-->
+        <br></br>
+        <input type="text"/> Esto es un text field q solo acepta texto <p></p> 
+        <input type="number"/> Esto es un text field q solo acepta numeros <p></p>
+        <input type="date"/> Esto es un text field q solo acepta fechas validas <p></p>
+        <input type="email"/> Esto es un text field q solo acepta mails  <p></p> <!--(no comprueba un carajo, basicamente si tiene el @ y .com lo acepta)-->
+        <input type="password"/> Esto es un text field q transforma en * cada caracter  <p></p> <!--(un text field pero pa q no se vea)-->
+        <input type="file"/> Esto es un boton que acepta todo tipo de archivos  <p></p><!--(no distingue ni peso ni tipo, peligrosa la wea)-->
+        <input type="hidden"/> Esto es un input type="hidden" no se que chotas hace <p></p>
+        <input type="radio"/> Esto es un checkbox (radio)</br>
+        <input type="radio"/></br>
+        <input type="checkbox"/> Esto es un checkbox de toda la vida</br>
+        <input type="checkbox"/></br>
+        <input type="text" value="" placeholder="Pepe texto"/>
+        <input type="text" placeholder="Esto es un placeholder, Pepe"/>
+        <input type="text" readonly value="pepe readonly"/>
+        <input type="text" required placeholder="Pepe pero obligatorio"/>
+        <input type="text" name placeholder ="Literalmente Pepe Name"/>
+        <input type="number" max="33" placeholder="Pepe pero con numero maximo"/>
+        <input type="number" min="33" placeholder="Pepe pero con numero minimo"/>
+        <select> selct Admite otros Tags de HTML y abre un select con todo lo que este dentro
+            <option> Ejemplo 1 </option>
+            <option> Ejemplo 2 </option>
+            <option> Ejemplo 3 </option>
+        </br>
+    </br>
+</br>
+        </select>
+        <br></br>
+<br></br>
+</form>
+</div>
+
+<div>
+        <input type="submit"/><br> Esto es un boton que envia el formulario al servidor del index.html </br> <!-- Tambien se puede crear botones con <button>Boton</button>-->
+
+<iframe src="https://www.op.gg/summoners/las/Kevitachi-Void" width="65%" height="700"> </iframe><img src="https://media.tenor.com/NkLIN5UCkOAAAAAM/cho-gath.gif" width="25%" height="500" alt="jaja mira un cho bailando">
+<img src="Sources/247878253_335714858358582_6392507578686254245_n.jpg" alt="Buzz Light Year KEKW"/>
+
+<video controls width="50%" height="450">
+    <source src="Sources/Promoted to Master PA - copia.mkv">
+</video>
+<audio controls>
+<source src="Sources/Si_decis_que_vegetta_es_una_caca_os_matare.mp3">
+</audio>
+</div>
+
+<h3 id="ListitaOrdenadaBgColor"> Lista Ordenada (OL)</h3>
+<ol>
+   <li> 1kg de coca</li>
+   <li>  300g de MDMA</li>
+   <li> 400g de THC</li>
+   <li>1/3 taza de M </li>
+</ol>
+<h3 id="ListitaDesordenadaBgColor"> Lista sin ordenar (Bulletpoints)</h3>
+<ul>
+    <li>300g de harina</li>
+    <li>1kg de zapallo</li>
+    <li>900g de portland</li>
+    <li>4 dosis de caballo</li>
+    
+</ul>
+
+</div>
+
+<table border="1" width="900" cellspacing="1">
+
+<thead></thead>
+<tr>
+    <th>Nombres</th>
+    <th>Edades</th>
+    <th>Apellidos</th>
+    <th>Posicion favorita en el fubol 5</th>
+    <th>Dealer habitual</th>
+</tr>
+
+<tbody></tbody>
+<tr align="center">
+    <td>Paco</td>
+    <td>21</td>
+    <td>Sanz</td>
+    <td>No juega (esta lesionado)</td>
+    <td>El Rober</td>
+</tr>
+<tr align="center">
+    <td>Paquete</td>
+    <td>31</td>
+    <td>Marlboro</td>
+    <td>Es golero el wachin</td>
+    <td>No consume (alto gil)</td>
+</tr>
+<tr align="center">
+    <td>Paquin</td>
+    <td>23</td>
+    <td>Ronzero</td>
+    <td>De 9 le gusta, y a su hermana le encanta de 4</td>
+    <td>El Rober</td>
+</tr>
+<tfoot></tfoot>
+<tr align="center">
+    <td>Footer peruano que no sirve para nada</td>
+    <td>XD</td>
+    <td>XDD</td>
+    <td>XDDDD</td>
+    <td>XDDDDDD</td>
+</tr>
+</table>
+<br>
+<button id="botonHover"> <b>Boton con Hover de colorin</b></button>
+    <a href="https://www.youtube.com/watch?v=RgiNEBg2cI8&list=PLYB_kUyUykdta_7dEzGlx4619AS0tVHQ3&index=74" id="videito">
+        Best Video in the whole YouTube page
+    </a>
+    <a href="https Test para Atribute Selector"> 
+             Test para Atribute Selector
+    </a>
+    <input type="text" id="testFieldParaFocus"/>
+    <p id="feisbuXD"> Roberto Carlos Real 100% n0 Fake</p>
+<br>
+<br>
+    <img  id="bokeron" src="Sources/andre.jpg">
+<p id="p1" class="versosPerversos">Seguimos con los versos perversos demuestro a todos que ejerzo</p>
+   <p id="p2" class="versosPerversos">De chico raro, con descaro, hijo de Amparo y de un tuerto</p> 
+    <p id="p3" class="versosPerversos">Mi tío es Berto, no Romero, no Tomillo</p>
+   <p id="p4" class="versosPerversos"> Ver todos los días al primo pillo, que pillaba frío y no se abriga</p>
+   <p id="p5" class="versosPerversos">Le suena la barriga, ¿diga?</p> 
+   <p class="versosPerversos"> Hello, Im your belly, can you give me some comida?</p>
+  <p class="versosPerversos">  Mira, of course I can, y compro un caldo de Avecrem</p>
+  <p class="versosPerversos">  Se creen ustedes que soy rico, rico el caldo, ¡Sabe bien!</p>
+ <p class="versosPerversos">   ¿Sabes qué más sabe bien? Jeje, exacto</p>
+  <p class="versosPerversos">  Aunque parezca pintada por Goya, no es más que mi po-po-po</p>
+   <p class="versosPerversos"> Poción traída de Troya, la han traído Luis, Bernardo, Ernesto</p>
+   <p class="versosPerversos"> En esto que me da por ver el móvil; mensaje de texto</p>
+<p class="versosPerversos">    Resulta ser Felipe VI el remitente</p>
+ <p class="versosPerversos">   Lo siento, brother, tengo el casoncio lleno e gente</p>
+ <p class="versosPerversos">   No te rayes - le contesto - y, fuera de contexto, resto</p>
+   <p class="versosPerversos"> Nueve menos dos son siete, increíble el gesto</p>
+</div>
+</div>
+</body>
+</html>

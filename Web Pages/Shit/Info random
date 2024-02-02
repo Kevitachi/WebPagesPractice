@@ -1,0 +1,11 @@
+Info pa CSS y HTML
+
+Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree.
+ One example of a widely used pseudo-class is :hover, which identifies content only when the user "points to" the visible element, usually by holding the mouse cursor over it.
+
+Pseudo Elements Selectors
+pseudo-element makes a selection that may consist of partial elements, such as ::first-line or ::first-letter. 
+Note the double-colon notation for pseudo-elements versus single-colon notation for pseudo-class
+
+Attribute Selectors
+The [attribute] selector is used to select elements with specific attribute.

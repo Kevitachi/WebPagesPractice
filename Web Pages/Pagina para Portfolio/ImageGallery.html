@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ImageGallery</title>
+    <style>
+        
+        body{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    padding-top: 100px;
+    background-color: black;
+    background-image: url(Sources/LeagueOfLegends_Worlds2020_TakeOver_teaser4.jpg);
+
+}
+
+th{
+    color: rgb(127, 167, 167);
+    text-align: center;  
+}
+td{
+    color: silver;
+}
+
+
+
+.gridContainer{
+
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: minmax(800px, auto);
+}
+
+.gridItem{
+    background-color: rgb(31, 30, 30);
+    border: none;
+    padding: 20px;
+}
+.header{
+    grid-area: header;
+    position: fixed;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid;
+    border-bottom-color: rgb(75, 74, 74);
+    background-color: rgb(24, 23, 23);
+    height: 80px;
+    z-index: 5;
+}
+li{
+    float: left;
+    list-style-type: none;
+    
+}
+li a{
+    display:block;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+li a:hover{
+    background-color:rgb(75, 74, 74);
+    color: rgb(74, 255, 255);
+    box-sizing: border-box;
+    border: 100%;
+
+}
+
+.sidebar{
+        
+   box-sizing: border-box;
+    border: 1px solid;
+    border-color:rgb(75, 74, 74);
+    background-color:  #0a0e13; 
+      font-family: Arial, Helvetica, sans-serif;
+    /* border-bottom-color: rgb(75, 74, 74);
+    border-right-color: rgb(75, 74, 74); */
+    height: 100%;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.content{
+    color: silver;
+    background-color: #0f1519;
+}
+.right-sidebar{
+box-sizing: border-box;
+border: 1px solid;
+border-color:rgb(74, 74, 75);
+background-color:  #0a0e13; 
+font-family: Arial, Helvetica, sans-serif;
+height: 100%;
+font-weight: 600;
+line-height: 120%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+    display: block;
+    
+    
+}
+.dropdown_content1{
+    display: none;
+    position: absolute;
+    z-index: 3;
+   
+  
+}
+.dropdown:hover .dropdown_content1{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: auto;
+    padding-left: 20px;
+    padding-right: 240px;
+    background-color: #252c32;
+}
+
+.dropbutton{
+    border: none;
+    margin-bottom: 30px;
+}
+button{
+background-color: #0a0e13; 
+color: white;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+a.optionsSidebar{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+    </style>
+</head>
+<header>
+
+<div id="Banner">
+
+<!-- Banner simple por ahora -->
+</div>
+
+</header>
+
+<body>
+ <div class="gridContainer">
+    <div class="gridItem header">
+        <ul>
+            <li><a  href="#home">Home</a></li>
+            <li><a  href="#about">About</a></li>
+            <li><a  href="#search">Search</a></li>
+        </ul>
+    </div><!--HeaderEnd-->
+    <!--...-->
+    <!--...-->
+    <div class="gridItem sidebar"><div id="contentList_shape" >
+        <div id="contentList">
+    
+            <table>
+                <thead>
+                  <th>  Contenidos de la Pagina</th>
+                </thead> 
+            </table>
+
+                <div class="dropdown">
+                    <button class="dropbutton"><br>Page 1</button>
+                   <div class="dropdown_content1">
+                    <a class="optionsSidebar" href="#">Opcion 1.1</a>
+                    <a class="optionsSidebar" href="#">Opcion 1.2</a>
+                    <a class="optionsSidebar" href="#">Opcion 1.3</a>
+                    <a class="optionsSidebar" href="#">Opcion 1.4</a>
+                   </div>
+               </div>
+
+               <div class="dropdown">
+               <button class="dropbutton"><br>Page 2</button>
+               <div class="dropdown_content1">
+                <a class="optionsSidebar" href="#">Opcion 2.1</a>
+                <a class="optionsSidebar" href="#">Opcion 2.2</a>
+                <a class="optionsSidebar" href="#">Opcion 2.3</a>
+                <a class="optionsSidebar" href="#">Opcion 2.4</a>
+               </div>
+           </div>
+
+               
+
+
+
+    
+        </div>
+
+    </div>
+
+</div><!--Sidebar end-->
+  <!--...-->
+    <!--...-->
+    <div class="gridItem content">contenido de la pagina xd</div>
+    <div class="gridItem right-sidebar">
+
+        <table>
+            <thead>
+              <th>RIGHT SIDEBAR</th>
+            </thead> 
+        </table>
+    </div>
+
+
+</div><!--GridContainer-->
+    <!-- <i class="fa fa-search"></i>--> <!-- Ejemplo de icono, Link para sacar iconos https://www.w3schools.com/w3css/w3css_icons.asp-->
+
+    <div class="imgGallery">
+        <div class="image"></div>
+    </div>
+
+</body>
+</html>

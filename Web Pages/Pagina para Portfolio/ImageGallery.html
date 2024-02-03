@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>PepePage ImageGallery</title>
     <style>
-        
+
 body{
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 100px;
-    background-color: black;
-    background-image: url(Sources/LeagueOfLegends_Worlds2020_TakeOver_teaser4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    padding-top: 1625px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
+body.background{
+background: url(Sources/LeagueOfLegends_Worlds2020_TakeOver_teaser4.jpg) no-repeat center center fixed;
+  background-size: cover; 
+
+}
 th{
     color: rgb(127, 167, 167);
     text-align: center;  
@@ -36,6 +39,7 @@ td{
     grid-template-rows: minmax(800px, auto);
     position: absolute;
     object-fit: scale-down;
+    
 }
 
 .gridItem{
@@ -81,10 +85,12 @@ li a{
     text-transform: uppercase;
 }
 li a:hover{
+    background-image: linear-gradient(to bottom, rgb(75, 74, 74), rgb(47, 179, 231));
     background-color:rgb(75, 74, 74);
+    width: 100%;
+    padding-bottom: 7%;
     color: rgb(74, 255, 255);
     box-sizing: border-box;
-    border: 100%;
 
 }
 
@@ -182,10 +188,16 @@ a.optionsSidebar{
 
 .images{
     object-fit: scale-down;
-    width: 50vw;
-    height: auto;
-
+    width: auto;
+    height: auto;   
+    display: flex;
 }
+
+
+
+
+
+
 /* #home{
 width: 44px;
 height: 46px;
@@ -214,7 +226,7 @@ background:url(Sources/navigation_sprites_peruanos_aesetik.png) 299px 0;
 
 </header>
 
-<body>
+<body class="background">
  <div class="gridContainer">
     <div class="gridItem header">
         <ul>
@@ -300,6 +312,6 @@ background:url(Sources/navigation_sprites_peruanos_aesetik.png) 299px 0;
 
 </div><!--GridContainer-->
     <!-- <i class="fa fa-search"></i>--> <!-- Ejemplo de icono, Link para sacar iconos https://www.w3schools.com/w3css/w3css_icons.asp-->
-
 </body>
 </html>
+

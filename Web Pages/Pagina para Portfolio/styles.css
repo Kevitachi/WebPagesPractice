@@ -1,0 +1,200 @@
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 493px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+body.background_page2{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 1625px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: url(Sources/LeagueOfLegends_Worlds2020_TakeOver_teaser4.jpg) no-repeat center center fixed;
+  background-size: cover; 
+}
+
+
+
+body.background{
+background: url(Sources/LeagueOfLegends_Worlds2020_TakeOver_teaser4.jpg) no-repeat center center fixed;
+  background-size: cover; 
+
+}
+
+th{
+    color: rgb(127, 167, 167);
+    text-align: center;  
+}
+td{
+    color: silver;
+}
+
+
+
+.gridContainer{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1061px 1fr;
+    grid-template-rows: minmax(800px, auto);
+    position: absolute;
+    object-fit: scale-down;
+    
+}
+
+.gridItem{
+    background-color: rgb(31, 30, 30);
+    border: none;
+    padding: 20px;
+}
+.header{
+    grid-area: header;
+    position: fixed;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid;
+    border-bottom-color: rgb(75, 74, 74);
+    background-color: rgb(24, 23, 23);
+    height: 80px;
+    z-index: 5;
+}
+li{
+    float: left;
+    list-style-type: none;
+    
+}
+li a{
+    display:block;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+}
+/* Para nada me estoy copiando de como se vel a pagina de LolEsports */
+li a::after {
+    content: ''; 
+    position: absolute; 
+    top: 30px;
+    left: 10px;
+    width: 80%; 
+    height: 100%; 
+    background-image: linear-gradient(to bottom, rgb(75, 74, 74), rgb(47, 179, 231));
+    background-color: rgb(75, 74, 74);
+    z-index: -1;
+    opacity: 0; 
+}
+
+li a:hover::after {
+    opacity: 1; 
+}
+  
+.sidebar{
+        
+   box-sizing: border-box;
+    border: 1px solid;
+    border-color:rgb(75, 74, 74);
+    background-color:  #0a0e13; 
+      font-family: Arial, Helvetica, sans-serif;
+      max-width:354px ;
+      min-width:354px ;
+    height: 100%;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.content{
+    color: silver;
+    background-color: #0f1519;
+    min-width: 3fr;
+}
+.right-sidebar{
+box-sizing: border-box;
+border: 1px solid;
+border-color:rgb(74, 74, 75);
+background-color:  #0a0e13; 
+font-family: Arial, Helvetica, sans-serif;
+max-width:354px ;
+min-width:354px ;
+height: 100%;
+font-weight: 600;
+line-height: 120%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+    display: block;
+    
+    
+}
+.dropdown_content1{
+    display: none;
+    position: absolute;
+    z-index: 3;
+}
+.dropdown:hover .dropdown_content1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    min-width: 330px;
+    padding: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: #252c32;
+}
+
+.dropbutton{
+    border: none;
+    margin-bottom: 30px;
+}
+button{
+background-color: #0a0e13; 
+color: white;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+a.optionsSidebar{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.image_gallery{
+    object-fit: scale-down;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row: auto;
+    grid-gap: 10px;
+    
+}
+
+.images{
+    object-fit: scale-down;
+    width: auto;
+    height: auto;   
+    display: flex;
+}

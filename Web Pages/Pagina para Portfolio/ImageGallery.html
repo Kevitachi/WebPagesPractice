@@ -11,13 +11,6 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<header>
-
-<div id="Banner">
-
-<!-- Banner simple por ahora -->
-</div>
-
 </header>
 
 <body class="background_page2">
@@ -27,36 +20,38 @@
             <li><a  href="PaginaPrincipal.html">Home</a></li>
             <li><a  href="#about">About</a></li>
             <li><a  href="#search">Search</a></li>
+            <li class="headerOptionsLog position-absolute end-0"><a  href="#logIn">Log In</a></li>
+            <li class="headerOptionsSign"><a  href="#signIn">Sign In</a></li>
+            <li class="headerOptionsLogo position-absolute start-50 translate-middle"><span><img src="./image.png" class="icon" width="60" height="60" viewBox="0 0 425 425"></span></li>
         </ul>
     </div><!--HeaderEnd-->
     <!--...-->
     <!--...-->
-    <div class="gridItem sidebar"><div id="contentList_shape" >
+ <div class="gridItem sidebar"><div id="contentList_shape" >
         <div id="contentList">
     
             <table>
                 <thead>
-                    <th><div class="position-absolute start-2">MENU DE CONTENIDO</div></th>
+                  <th><div class="position-absolute start-2">MENU DE CONTENIDO</div></th>
                 </thead> 
             </table>
 
                 <div class="dropdown">
-                    <button class="dropbutton"><br>Page 1</button>
+                    <button class="dropbutton"><br>Bases de su exito</button>
                    <div class="dropdown_content1">
-                    <a class="optionsSidebar" href="ImageGallery.html">IMAGE GALLERY</a>
-                    <a class="optionsSidebar" href="#">Opcion 1.2</a>
-                    <a class="optionsSidebar" href="#">Opcion 1.3</a>
-                    <a class="optionsSidebar" href="#">Opcion 1.4</a>
+                    <a class="optionsSidebar" href="#">HISTORIA</a>
+                    <a class="optionsSidebar" href="#">E-Sports</a>
+                    <a class="optionsSidebar" href="#">Comunidad</a>
                    </div>
                </div>
 
                <div class="dropdown">
-               <button class="dropbutton"><br>Page 2</button>
+               <button class="dropbutton"><br>El Juego</button>
                <div class="dropdown_content1">
-                <a class="optionsSidebar" href="#">Opcion 2.1</a>
-                <a class="optionsSidebar" href="#">Opcion 2.2</a>
-                <a class="optionsSidebar" href="#">Opcion 2.3</a>
-                <a class="optionsSidebar" href="#">Opcion 2.4</a>
+                <a class="optionsSidebar" href="#">Motivos para jugarlo</a>
+                <a class="optionsSidebar" href="#">Macro Estrategia</a>
+                <a class="optionsSidebar" href="#">El mejor campeon y mas balanceado del juego</a>
+                <a class="optionsSidebar" href="ImageGallery.html">IMAGE GALLERY<br>(fotos de Faker y xPeke)</a>
                </div>
            </div>
     
@@ -68,6 +63,28 @@
   <!--...-->
     <!--...-->
     <div class="gridItem content">
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 <div class="image_gallery">
   <div class="images4gallery">
@@ -85,23 +102,24 @@
   <div class="images4gallery">
     <img class="images" src="ImgGallerySources/xpekethumbsup.jpg">
   </div>
-</div><!-- Image gallery end-->
+</div>
 
-<!-- <div class="navigation_sprites">
-    <img id="home"width="1" height="1">
-    <img id="back" width="1" height="1">
-    <img id="forward" width="1" height="1"> 
-</div>      #13qwerty --> 
 
     </div> <!--GridItemContent end-->
     <div class="gridItem right-sidebar">
 
-        <table>
-            <thead>
-              <th>RIGHT SIDEBAR</th>
-            </thead> 
-        </table>
-    </div>
+      <table>
+          <thead>
+            <th></th>
+          </thead> 
+      </table>
+      <a href="https://signup.leagueoflegends.com/en-us/signup/redownload">
+          <div class="RiotAD">
+              <img src="Sources/RiotGifAd.gif" width="310px">
+          </div>
+      </a>
+      <a href="https://youtu.be/lWbV4eYk0NI?t=735" class="btn btn-success w-100 p-3">DOWNLOAD</a>
+  </div>
 
 
 </div><!--GridContainer-->

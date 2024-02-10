@@ -6,7 +6,7 @@ body{
     align-items: center;
     display: flex;
 }
-body.background_page2{
+/* body.background_page2{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 1625px;
@@ -15,7 +15,7 @@ body.background_page2{
     display: flex;
     background: url(Sources/LeagueOfLegends_Worlds2020_TakeOver_teaser4.jpg) no-repeat center center fixed;
   background-size: cover; 
-}
+} */
 
 
 
@@ -38,10 +38,11 @@ td{
 .gridContainer{
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1061px 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: minmax(800px, auto);
     position: absolute;
     object-fit: scale-down;
+    gap: 0px;
     
 }
 
@@ -64,9 +65,6 @@ td{
     background-color: rgb(24, 23, 23);
     height: 80px;
     z-index: 5;
-}
-.headerOptionsSign{
-    margin-left: 1300px;
 }
 li{
     float: left;
@@ -109,13 +107,14 @@ li a:hover::after {
   
 .sidebar{
         
-   box-sizing: border-box;
+    box-sizing: border-box;
     border: 1px solid;
     border-color:rgb(75, 74, 74);
     background-color:  #0a0e13; 
       font-family: Arial, Helvetica, sans-serif;
-      max-width:354px ;
-      min-width:354px ;
+      /* max-width:354px ;
+      min-width:354px ; */
+      width: 100%;
     height: 100%;
     font-weight: 600;
     line-height: 120%;
@@ -134,8 +133,9 @@ border: 1px solid;
 border-color:rgb(74, 74, 75);
 background-color:  #0a0e13; 
 font-family: Arial, Helvetica, sans-serif;
-max-width:354px ;
-min-width:354px ;
+/* max-width:354px ;
+min-width:354px ; */
+width: 100%;
 height: 100%;
 font-weight: 600;
 line-height: 120%;
@@ -212,9 +212,23 @@ a.optionsSidebar{
     
 }
 
+
 .images{
     object-fit: scale-down;
     width: auto;
     height: auto;   
     display: flex;
+}
+@media screen and (max-width: 768px) {
+
+    .sidebar {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .RiotAD img {
+        max-width: 90%;
+    }
 }

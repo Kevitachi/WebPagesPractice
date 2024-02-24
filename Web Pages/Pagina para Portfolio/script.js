@@ -1,79 +1,6 @@
 
-let XD1= 'Aguante'
-let XD2= 'Cho'
-let XD2_1="'Gath"
-let XD3= XD1 + " " + XD2 + XD2_1
-
-console.log(XD3)
-
-i=1;
-    while(i<=10){
-        i++
-        console.log("ValorWhile:"+i)
-        //Hacete un fibonacci flaco no seas pete
-    }
-
-    do{
-        console.log("Valor DoWhile:"+i)
-        i++
-    }while(i>12)
-
-
-
-
-
-
-    function sum(x,y){
-
-        return x+y;
-    }
-    let plus=sum(10,30);
-    console.log("Resultado de la funcion suma:"+ plus)
-
-
-    
-c=3;
-function MileiSi_o_No(c){
-
-if(c=3){
-    return false;
-}
-    return true;
-}
-console.log(MileiSi_o_No(c))
-
-
-//Estoy escribiendo cualquier cosa
-//Objeto
-let name;
-let age;
-let debt;
-
-let pepin={
-    name:'Pepin',
-    age:60,
-    debt: 6000000000
-
-}
-// console.log(pepin)
-
-let ArrayPepin = [pepin, 'Pepe','Pepote','Zanopia'];
-ArrayPepin.push('Espinoza');
-
-console.log(ArrayPepin[0])
-console.log(ArrayPepin[1])
-console.log(ArrayPepin[2])
-console.log(ArrayPepin[3])
-console.log(ArrayPepin[4])
-
-let slice=XD3.slice(7, 16);
-
-console.log("Esto es un slice:" +slice)
-
-
+//Switch Case sin mas
 var value= parseInt(prompt("Ingresar un valor entre 1 y 3"))
-
-
 switch(value){
 
 case 1:
@@ -91,15 +18,55 @@ case  3:
    default: 
     console.log("Exit")
     break;
-
 }
 
-for(let i =0; i<=10;i++){
-    let XD1= 'Aguante'
-    let XD2= 'Cho'
-    let XD2_1="'Gath"
-    let XD3= XD1 + " " + XD2 + XD2_1
-    
-    console.log(XD3)
-}
 
+
+//Obtencion de elementos en HTML usando DOM
+let DomTest= document.getElementById("DOMtest")
+console.log(DomTest)
+
+let SidebarData = document.getElementsByClassName("optionsSidebar")
+console.log(SidebarData)
+
+let Anchortags = document.getElementsByTagName("a")
+console.log(Anchortags)
+
+
+//Obtencion de un elemento en base a el Style que posea (DOM)
+let CSSitem = document.querySelector("li") //Selecciona siempre el primero en salir si hay varios
+
+console.log(CSSitem)
+
+let CSSitem2 = document.querySelectorAll("li")
+
+console.log(CSSitem2)
+
+
+//Event listener para un boton, al darle click muestra un mensaje de alerta
+const button = document.querySelector('#buttonTest');
+
+button.addEventListener('click', () => {
+    alert('Esto en la Season 5 no pasaba')
+})
+
+//Otro tipo de Event listener, solo que en este caso es en base a que el usuario escriba en un text field (se muestra en consola pq no puse un alert("") )
+const searchBox = document.querySelector('#searchBoxTest');
+
+    searchBox.addEventListener('keyup', () =>{
+
+            console.log("Esto en la Season 5 no pasaba pero en vez de mapearte los clicks te cago mapeando cuando escribis cabeza")
+
+    })
+
+
+    //Permite modificar el estilo de los objetos en una lista cuando el usuario los selecciona, el toggle modifica el estilo a uno creado en el archivo de styles
+    const listaParaDOM = document.querySelectorAll('#pacoList');
+
+    listaParaDOM.forEach(item => {
+
+        item.addEventListener('click', () => {
+
+            item.classList.toggle('completed')
+        })
+    });

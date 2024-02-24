@@ -232,3 +232,7 @@ a.optionsSidebar{
         max-width: 90%;
     }
 }
+/* Style bobin para un test de JS */
+.completed{
+    color: rgb(54, 240, 94);
+}
